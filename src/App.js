@@ -5,10 +5,20 @@ import Quiz from './quiz';
 
 
 function App() {
+
+  const handleClick = (option, answer) => {
+    alert(`This is Carl's button!`);
+
+  };
+
   return (
     <div className="App">
 
       <Quiz />
+      <hr></hr>
+      <h1>This is a new heading from Carl</h1>
+      <p>New stuff</p>
+      <button onClick={() => handleClick()}>Carl's Button</button>
     </div>
   );
 }
